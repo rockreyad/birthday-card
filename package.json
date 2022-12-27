@@ -17,19 +17,18 @@
     "build": "npm-run-all init-index-remote build:parcel"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AnshumanMahato/Happy-Birthday-Card.git"
+    "type": "git"
   },
   "keywords": [
-    "happy-birthday",
-    "birthday-card"
+    "happy-birthday-puja",
+    "puja-birthday-card"
   ],
-  "author": "Anshuman Mahato",
+  "author": "Reyad",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AnshumanMahato/Happy-Birthday-Card/issues"
+    "url": "https://github.com/rockreyad/"
   },
-  "homepage": "https://github.com/AnshumanMahato/Happy-Birthday-Card#readme",
+  "homepage": "https://github.com/rockreyad/",
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.6.2",
     "@parcel/transformer-sass": "^2.6.2",
