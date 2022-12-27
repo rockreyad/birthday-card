@@ -18,20 +18,16 @@ const msgPath = process.env.SCROLL_MSG;
 
 //Local initialization
 const setLocalData = async () => {
-  try {
-    const pic = path.join(__dirname, "../local/", picPath);
-    let markup = "";
-    if (msgPath) {
-      const text = fs.readFileSync(path.join(__dirname, "../local/", msgPath), {
-        encoding: "utf-8",
-      });
-      markup = generateMarkupLocal(text);
-    }
-    await setPic(pic);
-    genIndex(markup);
-  } catch (e) {
-    throw new Error(e.message);
+  const pic = path.join(__dirname, "../local/", picPath);
+  let markup = "";
+  if (msgPath) {
+    const text = fs.readFileSync(path.join(__dirname, "../local/", msgPath), {
+      encoding: "utf-8",
+    });
+    markup = generateMarkupLocal(text);
   }
+  await setPic(pic);
+  genIndex(markup);
 };
 
 //Remote initialization
